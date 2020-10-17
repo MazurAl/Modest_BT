@@ -1,4 +1,4 @@
 $('.carousel').carousel({
-    interval: 0,
+    interval: 3000,
     touch: true
   })

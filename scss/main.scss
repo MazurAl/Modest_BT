@@ -66,14 +66,13 @@ p {
     margin: -25px 0 25px 0;
     @media (max-width: 767.98px) {
       font-size: 24px;
-      margin: 0 0 10px 0;
+      margin: 15px 0 20px;
     }
   }
   p {
     color: #ccd0d7;
     @media (max-width: 767.98px) {
-      font-size: 14px;
-      line-height: 1.2;
+      display: none;
     }
     span {
       display: block;
@@ -115,6 +114,42 @@ p {
       font-weight: 700;
     }
   }
+  ul {
+    float: left;
+    list-style-type: none;
+    margin-top: 35px;
+    margin-bottom: 110px;
+    padding-inline-start: 0;
+    li {
+      float: left;
+      a {
+        padding: 17px;
+        background: #c8cdd0;
+        margin-right: 1px;
+        font-size: 25px;
+        color: #fff;
+        &:hover {
+          background: #d0d5d9;
+          text-decoration: none;
+        }
+      }
+      .icon-google:before {
+        content: "\ea88";
+      }
+      .icon-facebook:before {
+        content: "\ea90";
+      }
+      .icon-twitter:before {
+        content: "\ea96";
+      }
+      .icon-dribbble:before {
+        content: "\eaa7";
+      }
+      .icon-behance:before {
+        content: "\eaa8";
+      }
+    }
+  }
 }
 .advantages {
   margin-top: 205px;
@@ -142,6 +177,115 @@ p {
       margin-bottom: 53px;
       color: #8d8f92;
       font: 16px/26px "Open Sans", sans-serif;
+    }
+  }
+}
+.teem {
+  h2 {
+    margin: 80px 0 60px 0;
+  }
+}
+.row {
+  max-width: 1170px;
+  margin: auto;
+  img {
+    width: 100%;
+  }
+  .teem-social {
+    display: none;
+    list-style-type: none;
+    float: left;
+    position: absolute;
+    top: 138px;
+    left: 35px;
+    @media (max-width: 991.98px) {
+      display: block;
+      top: 13px;
+      left: -25px;
+    }
+    li {
+      float: left;
+      .icon-facebook-social,
+      .icon-twitter-social,
+      .icon-linkedin2-social {
+        padding: 17px;
+        margin-right: 1px;
+        background: #3a454d;
+        font-size: 15px;
+        color: #fff;
+        &:hover {
+          background: #4e5a62;
+          text-decoration: none;
+        }
+      }
+      .icon-facebook-social:before {
+        content: "\ea90";
+      }
+      .icon-twitter-social:before {
+        content: "\ea96";
+      }
+      .icon-linkedin2-social:before {
+        content: "\eaca";
+      }
+    }
+  }
+  .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    height: 75px;
+    width: 100%;
+    background: #e1e6ea;
+    font: 700 16px "Quattrocento Sans", sans-serif;
+    text-transform: uppercase;
+    color: #292f36;
+    em {
+      font-style: normal;
+      font: 14px "Open Sans", sans-serif;
+      color: #8d8f92;
+      text-transform: none;
+    }
+  }
+  .people {
+    margin-bottom: 100px;
+    @media (max-width: 1199.98px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 991.98px) {
+      margin-bottom: 30px;
+    }
+    @media (max-width: 767.98px) {
+      margin-bottom: 15px;
+    }
+  }
+  .people:hover {
+    .teem-social {
+      display: block;
+    }
+    .title {
+      background: #3a454d;
+      color: #fff;
+      em {
+        color: #fff;
+      }
+    }
+    img {
+      background: #d4dade;
+      opacity: 0.4;
+    }
+    @media (max-width: 991.98px) {
+      .title {
+        background: #e1e6ea;
+        color: #292f36;
+        em {
+          color: #8d8f92;
+        }
+      }
+      img {
+        background: #d4dade;
+        opacity: 1;
+      }
     }
   }
 }
