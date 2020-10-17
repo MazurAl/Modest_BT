@@ -1,0 +1,80 @@
+.header_wrap {
+    background: #1d2126;
+    .row{
+      margin: 0 -30px;
+      padding: 25px 0;
+      .navbar{
+        padding: 0 0.5rem;
+      }
+    }
+  }
+  .logo {
+    background: url("../../images/logo.png");
+    width: 99px;
+    height: 19px;
+  }
+  .header_wrap .navbar-nav {
+    @media (max-width: 991.98px) {
+      padding-top: 20px;
+      height: 100vh;
+    }
+    li {
+      @media (max-width: 991.98px) {
+        padding-bottom: 15px;
+      }
+      &.active {
+        a {
+          color: $nav-active;
+          border: 2px solid $nav-active;
+          @media (max-width: 991.98px) {
+            border: 2px solid transparent;
+            border-bottom: 2px solid $nav-active;
+          }
+          &:hover {
+            border: 2px solid $nav-active;
+            @media (max-width: 991.98px) {
+              border: 2px solid transparent;
+              border-bottom: 2px solid $nav-active;
+            }
+          }
+        }
+      }
+      a {
+        font-size: 14px;
+        font-weight: 600;
+        color: $nav-grey;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        padding: 0 10px;
+        line-height: 26px;
+        margin-left: 16px;
+        text-transform: uppercase;
+        @media (max-width: 991.98px) {
+          text-align: center;
+          font-size: 18px;
+          line-height: 36px;
+        }
+        &:hover {
+          border: 2px solid #5b6168;
+          @media (max-width: 991.98px) {
+            border: 2px solid transparent;
+          }
+        }
+      }
+    }
+  }
+  .burger {
+    svg {
+      color: #fff;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  .navbar-toggler {
+    border: 2px solid #fff;
+    &:focus {
+      border: 2px solid #fff;
+      outline: none;
+    }
+  }
+  
